@@ -1,0 +1,28 @@
+Step 1: #Configure Git (one-time setup)
+
+git config --global user.name "Your Name"
+git config --global user.email "your-email@example.com"
+
+Step 2: #Create a Local Project Directory
+
+mkdir git-local-remote  #repo name can give any name
+cd git-local-remote 
+
+Step 3: #Initialize Git in the Directory
+git init
+
+Step 4: #Add Files and Commit
+
+echo "# git-local-remote" > README.md
+git add .
+git commit -m "Initial commit"
+
+Step 5: #Create and Push to GitHub Using GitHub CLI
+
+gh repo create git-local-remote --public --source=. --remote=origin --push
+
+🔹 This command does the following:
+
+Creates a public repo on GitHub
+Links your local repo to the remote (origin)
+Pushes your code to GitHub
