@@ -1,0 +1,23 @@
+How to Install gh (GitHub CLI)
+
+## For Ubuntu / Debian (Linux)
+
+sudo apt update
+sudo apt install gh
+
+##For macOS (with Homebrew)
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"  #for the first time installation only
+
+## Add Homebrew to your PATH
+
+echo >> ~/.bash_profile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.bash_profile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+brew install gh   # Install GitHub CLI (gh) using Homebrew
+
+
+## After Install: Authenticate
+
+gh auth login 
